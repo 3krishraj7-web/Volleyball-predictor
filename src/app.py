@@ -63,7 +63,7 @@ class VolleyballPredictorApp:
         header_frame.pack(fill="x")
 
         ttk.Label(header_frame, text="NCAA Volleyball Match Predictor", style="Header.TLabel").pack()
-        ttk.Label(header_frame, text="AI/ML Outcomes Engine (2016–2019 Collegiate Model)", style="SubHeader.TLabel").pack(pady=2)
+        ttk.Label(header_frame, text="NCAA Division I Matches (2016-2019)", style="SubHeader.TLabel").pack(pady=2)
 
         notebook = ttk.Notebook(self.root)
         notebook.pack(fill="both", expand=True, padx=16, pady=12)
@@ -71,8 +71,8 @@ class VolleyballPredictorApp:
         tab_matchup = ttk.Frame(notebook)
         tab_batch = ttk.Frame(notebook)
 
-        notebook.add(tab_matchup, text=" Head-to-Head Predictor ")
-        notebook.add(tab_batch, text=" Batch CSV Testing & Evaluation ")
+        notebook.add(tab_matchup, text=" Matchup Predictor ")
+        notebook.add(tab_batch, text=" Batch CSV Evaluation ")
 
         self._build_matchup_tab(tab_matchup)
         self._build_batch_tab(tab_batch)
@@ -194,8 +194,8 @@ class VolleyballPredictorApp:
         top_card = ttk.Frame(parent, style="Card.TFrame", padding=14)
         top_card.pack(fill="x", padx=8, pady=8)
 
-        tk.Label(top_card, text="Evaluate Any Custom Test CSV Dataset:", font=("Segoe UI", 10, "bold"), bg="#ffffff").pack(anchor="w")
-        tk.Label(top_card, text="CSV should contain either team names or pre-computed match features.", font=("Segoe UI", 9), bg="#ffffff", fg="#57606a").pack(anchor="w", pady=(0, 8))
+        tk.Label(top_card, text="Evaluate Match Dataset (CSV):", font=("Segoe UI", 10, "bold"), bg="#ffffff").pack(anchor="w")
+        tk.Label(top_card, text="Input CSV containing pre-match feature columns or historical match rows.", font=("Segoe UI", 9), bg="#ffffff", fg="#57606a").pack(anchor="w", pady=(0, 8))
 
         btn_box = tk.Frame(top_card, bg="#ffffff")
         btn_box.pack(fill="x")
