@@ -56,6 +56,9 @@ Volleyball predictor/
 ├── dist/
 │   ├── VolleyballPredictor_Portable.exe # Standalone 64-bit Windows executable (no Python required)
 │   └── VolleyballPredictor_Windows_x64.zip # Portable zip package (141 MB)
+├── docs/
+│   ├── SRS.md                      # Software Requirements Specification (IEEE 830)
+│   └── TEST_CASES.md               # Test case matrix and verification approach
 ├── models/
 │   └── best_model.joblib           # Trained XGBoost model
 ├── notebooks/
