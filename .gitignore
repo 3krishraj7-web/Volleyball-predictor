@@ -1,0 +1,37 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python & testing cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build & packaging artifacts
+build/
+dist/
+*.spec
+*.egg-info/
+
+# Data rules
+data/raw/
+*.csv
+!data/processed/features.csv
+!data/predictions/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+!notebooks/volleyball_predictor.ipynb
+
+# Models
+models/*
+!models/best_model.joblib
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
